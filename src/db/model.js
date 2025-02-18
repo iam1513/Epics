@@ -4,8 +4,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 const sql = neon(process.env.DB_URL);
 async function createUserTable() {
-    await sql`
-    CREATE TABLE IF NOT EXISTS users (
+  await sql`
+    CREATE TABLE IF NOT EXISTS dustbin (
       user_id SERIAL PRIMARY KEY,
       phone_number VARCHAR(15) NOT NULL,
       block VARCHAR(10),
