@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js",
-    "db:studio": "npx drizzle-kit studio"
+    "dev": "nodemon ./src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +12,7 @@
   "description": "",
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.3",
     "express": "^4.21.2",
